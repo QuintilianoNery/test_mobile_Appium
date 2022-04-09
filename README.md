@@ -92,7 +92,7 @@ OBS.: Verificar se foi criada com a instalação
 - no cmd:npm --version
 ```
 
-### Instalação o Appium de forma global
+### Instalação do Appium de forma global
 - [Node.js](https://nodejs.org/en/)
 ```
 - no cmd:npm install appium -g
@@ -108,7 +108,7 @@ Obs.: isso irá iniciar o servidor
 Obs.: Esse comando realiza um diagnóstico no computador, para identificar se está preparado para criar sessões appium no android, caso não tenha erro, está OK
 ```
 
-### Instalação o Appium desktop
+### Instalação do Appium desktop
 - [Appium desktop](https://appium.io/)
 - [Appium-Inspector](https://github.com/appium/appium-inspector/releases)
 
@@ -117,6 +117,15 @@ Obs.: Esse comando realiza um diagnóstico no computador, para identificar se es
         * Caso tenha permissão, instale para todos os usuários
         * Após instalar, apenas clique em start server na página do appium e marque as permissões do firewall
 ```
+
+### Instalação do Robot Framework
+```
+cmd: pip install robotframework
+```
+```
+Para utilizar e rodar um testes, é só executar robot teste.robot
+```
+
 
 ### Configurar um dispositivo virtual no AVD Manager no Android Studio
 ```
