@@ -1,4 +1,4 @@
-<h1 align="center">Automation Blipshop</h1>
+<h1 align="center">Automation Teste Mobile Appium</h1>
 
 ---
 
