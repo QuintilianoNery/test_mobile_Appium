@@ -121,11 +121,12 @@ Obs.: Esse comando realiza um diagnóstico no computador, para identificar se es
 ### Instalação do Robot Framework
 ```
 cmd: pip install robotframework
+cmd: pip install --upgrade robotframework-appiumlibrary
 ```
 ```
 Para utilizar e rodar um testes, é só executar robot teste.robot
+O segundo comando é para a utilização da biblioteca do Robot Framework com o appium
 ```
-
 
 ### Configurar um dispositivo virtual no AVD Manager no Android Studio
 ```
