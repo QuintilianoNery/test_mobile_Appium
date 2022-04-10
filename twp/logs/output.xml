@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.10.4 on win32)" generated="20220410 17:11:16.365" rpa="false" schemaversion="3">
+<suite id="s1" name="Home" source="C:\Users\quint\OneDrive\Documentos\Repositorios\test_mobile_appium\twp\home.robot">
+<test id="s1-t1" name="Dado que estou na tela principal" line="15">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>automationName=UiAutomator2</arg>
+<arg>deviceName=Android</arg>
+<arg>platformName=Android</arg>
+<arg>app=${EXECDIR}/App/twp.apk</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<status status="PASS" starttime="20220410 17:11:16.607" endtime="20220410 17:11:28.196"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Training Wheels Protocol</arg>
+<arg>5</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20220410 17:11:28.197" endtime="20220410 17:11:32.308"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Mobile Version</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20220410 17:11:32.308" endtime="20220410 17:11:32.374"/>
+</kw>
+<kw name="Close Application" library="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="PASS" starttime="20220410 17:11:32.375" endtime="20220410 17:11:32.919"/>
+</kw>
+<status status="PASS" starttime="20220410 17:11:16.607" endtime="20220410 17:11:32.920"/>
+</test>
+<status status="PASS" starttime="20220410 17:11:16.369" endtime="20220410 17:11:32.922"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Home">Home</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

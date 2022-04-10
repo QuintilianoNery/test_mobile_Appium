@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.10.4 on win32)" generated="20220410 16:56:34.120" rpa="false" schemaversion="3">
+<suite id="s1" name="Hello" source="C:\Users\quint\OneDrive\Documentos\Repositorios\test_mobile_appium\twp\Backup\hello.robot">
+<test id="s1-t1" name="Dado que retorne a mensagem de boas vindas" line="5">
+<kw name="Hello Robot" library="hello">
+<var>${resultado}</var>
+<arg>Quintiliano</arg>
+<msg timestamp="20220410 16:56:34.165" level="INFO">${resultado} = Olá, Quintiliano!</msg>
+<status status="PASS" starttime="20220410 16:56:34.164" endtime="20220410 16:56:34.165"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${resultado}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220410 16:56:34.165" endtime="20220410 16:56:34.166"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${resultado}</arg>
+<arg>Olá, Quintiliano!</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20220410 16:56:34.167" endtime="20220410 16:56:34.167"/>
+</kw>
+<status status="PASS" starttime="20220410 16:56:34.163" endtime="20220410 16:56:34.168"/>
+</test>
+<status status="PASS" starttime="20220410 16:56:34.124" endtime="20220410 16:56:34.169"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Hello">Hello</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
