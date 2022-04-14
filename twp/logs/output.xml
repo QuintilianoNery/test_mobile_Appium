@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.10.4 on win32)" generated="20220414 16:41:03.266" rpa="false" schemaversion="3">
+<suite id="s1" name="Home &amp; Nav">
+<suite id="s1-s1" name="Home" source="C:\Users\quintiliano.nery\Documents\Repo\Pessoal\test_mobile_appium\twp\home.robot">
+<test id="s1-s1-t1" name="Dado que estou na tela principal" line="9">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>automationName=UiAutomator2</arg>
+<arg>deviceName=Android</arg>
+<arg>platformName=Android</arg>
+<arg>app=${EXECDIR}/App/twp.apk</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<status status="PASS" starttime="20220414 16:41:03.377" endtime="20220414 16:41:15.869"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Training Wheels Protocol</arg>
+<arg>5</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20220414 16:41:15.870" endtime="20220414 16:41:26.217"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Mobile Version</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20220414 16:41:26.217" endtime="20220414 16:41:36.531"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>COMEÇAR</arg>
+<arg>5</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20220414 16:41:36.532" endtime="20220414 16:41:46.816"/>
+</kw>
+<kw name="Click Text" library="AppiumLibrary">
+<arg>COMEÇAR</arg>
+<doc>Click text identified by ``text``.</doc>
+<status status="PASS" starttime="20220414 16:41:46.817" endtime="20220414 16:42:27.653"/>
+</kw>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<arg>teste.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220414 16:42:28.207" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="teste.png"&gt;&lt;img src="teste.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220414 16:42:27.655" endtime="20220414 16:42:28.207"/>
+</kw>
+<kw name="Close Application" library="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="PASS" starttime="20220414 16:42:28.208" endtime="20220414 16:42:28.614"/>
+</kw>
+<status status="PASS" starttime="20220414 16:41:03.376" endtime="20220414 16:42:28.614"/>
+</test>
+<status status="PASS" starttime="20220414 16:41:03.280" endtime="20220414 16:42:28.615"/>
+</suite>
+<suite id="s1-s2" name="Nav" source="C:\Users\quintiliano.nery\Documents\Repo\Pessoal\test_mobile_appium\twp\nav.robot">
+<test id="s1-s2-t1" name="Dado que estou na tela Dialogs" line="8">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>automationName=UiAutomator2</arg>
+<arg>deviceName=Redmi_Note_8_Pro</arg>
+<arg>platformName=Android</arg>
+<arg>app=${EXECDIR}/App/twp.apk</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<status status="PASS" starttime="20220414 16:42:28.625" endtime="20220414 16:42:39.756"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>COMEÇAR</arg>
+<arg>5</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20220414 16:42:39.757" endtime="20220414 16:42:50.125"/>
+</kw>
+<kw name="Click Text" library="AppiumLibrary">
+<arg>COMEÇAR</arg>
+<doc>Click text identified by ``text``.</doc>
+<status status="PASS" starttime="20220414 16:42:50.126" endtime="20220414 16:43:31.097"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>xpath=//android.widget.ImageButton[@content-desc="Open navigation drawer"]</arg>
+<arg>5</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" starttime="20220414 16:43:31.098" endtime="20220414 16:43:41.530"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//android.widget.ImageButton[@content-desc="Open navigation drawer"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220414 16:43:41.532" level="INFO">Clicking element 'xpath=//android.widget.ImageButton[@content-desc="Open navigation drawer"]'.</msg>
+<status status="PASS" starttime="20220414 16:43:41.531" endtime="20220414 16:44:22.034"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>id=io.qaninja.android.twp:id/navView</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" starttime="20220414 16:44:22.035" endtime="20220414 16:44:32.298"/>
+</kw>
+<kw name="Click Text" library="AppiumLibrary">
+<arg>DIALOGS</arg>
+<doc>Click text identified by ``text``.</doc>
+<status status="PASS" starttime="20220414 16:44:32.299" endtime="20220414 16:45:13.060"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>id=io.qaninja.android.twp:id/toolbarTitle</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" starttime="20220414 16:45:13.061" endtime="20220414 16:45:23.273"/>
+</kw>
+<kw name="Element Name Should Be" library="AppiumLibrary">
+<arg>id=io.qaninja.android.twp:id/toolbarTitle</arg>
+<arg>DIALOGS</arg>
+<msg timestamp="20220414 16:45:53.546" level="INFO">Element 'id=io.qaninja.android.twp:id/toolbarTitle' name is 'DIALOGS' </msg>
+<status status="PASS" starttime="20220414 16:45:23.273" endtime="20220414 16:45:53.546"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>DIALOGS</arg>
+<arg>5</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20220414 16:45:53.548" endtime="20220414 16:46:03.910"/>
+</kw>
+<kw name="Close Application" library="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="PASS" starttime="20220414 16:46:03.911" endtime="20220414 16:46:04.338"/>
+</kw>
+<status status="PASS" starttime="20220414 16:42:28.625" endtime="20220414 16:46:04.339"/>
+</test>
+<status status="PASS" starttime="20220414 16:42:28.615" endtime="20220414 16:46:04.340"/>
+</suite>
+<status status="PASS" starttime="20220414 16:41:03.267" endtime="20220414 16:46:04.341"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Home &amp; Nav">Home &amp; Nav</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Home">Home &amp; Nav.Home</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s2" name="Nav">Home &amp; Nav.Nav</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20220414 16:41:03.370" level="ERROR">Error in file 'C:\Users\quintiliano.nery\Documents\Repo\Pessoal\test_mobile_appium\twp\home.robot' on line 4: Importing library 'robotframework' failed: ModuleNotFoundError: No module named 'robotframework'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Python310\Scripts\robot.exe
+  C:\Python310\python310.zip
+  C:\Python310\DLLs
+  C:\Python310\lib
+  C:\Python310
+  C:\Python310\lib\site-packages</msg>
+<msg timestamp="20220414 16:41:03.373" level="ERROR">Error in file 'C:\Users\quintiliano.nery\Documents\Repo\Pessoal\test_mobile_appium\twp\home.robot' on line 5: Importing library 'robotframework-appiumlibrary' failed: ModuleNotFoundError: No module named 'robotframework-appiumlibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Python310\Scripts\robot.exe
+  C:\Python310\python310.zip
+  C:\Python310\DLLs
+  C:\Python310\lib
+  C:\Python310
+  C:\Python310\lib\site-packages</msg>
+<msg timestamp="20220414 16:42:28.619" level="ERROR">Error in file 'C:\Users\quintiliano.nery\Documents\Repo\Pessoal\test_mobile_appium\twp\nav.robot' on line 3: Importing library 'robotframework' failed: ModuleNotFoundError: No module named 'robotframework'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Python310\Scripts\robot.exe
+  C:\Python310\python310.zip
+  C:\Python310\DLLs
+  C:\Python310\lib
+  C:\Python310
+  C:\Python310\lib\site-packages</msg>
+<msg timestamp="20220414 16:42:28.622" level="ERROR">Error in file 'C:\Users\quintiliano.nery\Documents\Repo\Pessoal\test_mobile_appium\twp\nav.robot' on line 4: Importing library 'robotframework-appiumlibrary' failed: ModuleNotFoundError: No module named 'robotframework-appiumlibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Python310\Scripts\robot.exe
+  C:\Python310\python310.zip
+  C:\Python310\DLLs
+  C:\Python310\lib
+  C:\Python310
+  C:\Python310\lib\site-packages</msg>
+</errors>
+</robot>

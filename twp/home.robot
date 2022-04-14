@@ -1,6 +1,8 @@
 *** Settings ***
 
 Library     AppiumLibrary
+Library     robotframework
+Library     robotframework-appiumlibrary
 
 
 *** Test Cases ***
@@ -13,4 +15,7 @@ Dado que estou na tela principal
 
     Wait Until Page Contains     Training Wheels Protocol     5
     Wait Until Page Contains     Mobile Version
+    Wait Until Page Contains     COMEÇAR     5
+    Click Text                   COMEÇAR
+    Capture Page Screenshot     teste.png
     Close Application
