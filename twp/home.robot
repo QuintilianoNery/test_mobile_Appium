@@ -17,5 +17,4 @@ Dado que estou na tela principal
     Wait Until Page Contains     Mobile Version
     Wait Until Page Contains     COMEÇAR     5
     Click Text                   COMEÇAR
-    Capture Page Screenshot     teste.png
     Close Application
