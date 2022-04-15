@@ -1,8 +1,5 @@
 *** Settings ***
-
-Library     AppiumLibrary
-Library     robotframework
-Library     robotframework-appiumlibrary
+Library    AppiumLibrary
 
 
 *** Test Cases ***
