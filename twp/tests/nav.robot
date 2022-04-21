@@ -7,16 +7,10 @@ Test Setup        Open Session
 Test Teardown     Close Session
 
 *** Variables ***
-${TOOLBAR_TITLE}     id=io.qaninja.android.twp:id/toolbarTitle
+${TOOLBAR_TITLE}                 id=io.qaninja.android.twp:id/toolbarTitle
     
 *** Test Cases ***
-Dado que estou na tela inicial
-    Wait Until Page Contains     Training Wheels Protocol
-    Wait Until Page Contains     Mobile Version
-    Get Started
-
 Devo acessar a tela Avengers
-    Get Started
     Open Nav
 
     Click Text                          AVENGERS
@@ -25,7 +19,6 @@ Devo acessar a tela Avengers
     Wait Until Page Contains            AVENGERS
 
 Devo acessar a tela Forms
-    Get Started
     Open Nav
 
     Click Text                          FORMS
@@ -34,7 +27,6 @@ Devo acessar a tela Forms
     Wait Until Page Contains            FORMS
 
 Devo acessar a tela Dialogs
-    Get Started
     Open Nav
 
     Click Text                          DIALOGS
@@ -43,7 +35,6 @@ Devo acessar a tela Dialogs
     Wait Until Page Contains            DIALOGS
 
 Devo acessar a tela Seek Bar
-    Get Started
     Open Nav
 
     Click Text                          SEEK BAR
@@ -52,7 +43,6 @@ Devo acessar a tela Seek Bar
     Wait Until Page Contains            SEEK BAR
 
 Devo acessar a tela Inputs
-    Get Started
     Open Nav
 
     Click Text                          INPUTS
@@ -61,7 +51,6 @@ Devo acessar a tela Inputs
     Wait Until Page Contains            INPUTS
 
 Devo acessar a tela Botões
-    Get Started
     Open Nav
 
     Click Text                          BOTÕES
