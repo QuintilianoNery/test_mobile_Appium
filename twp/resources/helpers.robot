@@ -29,3 +29,11 @@ Abrir Formulario De Login
 
     Click Text                  LOGIN
     Wait Until Page Contains    Fala QA, vamos testar o login?
+
+Abrir Formulario De Radion Buttons
+    Open Nav
+    Click Text                  INPUTS
+    Wait Until Page Contains    INPUTS
+
+    Click Text                  BOTÕES DE RADIO
+    Wait Until Page Contains    Escolha sua linguagem preferida
