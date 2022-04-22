@@ -6,8 +6,6 @@ Test Setup        Open Session
 # Test Teardown     - Executa após cada teste
 Test Teardown     Close Session
 
-*** Variables ***
-${TOOLBAR_TITLE}                 id=io.qaninja.android.twp:id/toolbarTitle
     
 *** Test Cases ***
 Devo acessar a tela Avengers

@@ -6,16 +6,19 @@ Test Teardown    Close Session
 
 *** Test Case ***
 Deve logar com sucesso
-    Open Nav
-    Click Text                   FORMS
-    Wait Until Page Contains     FORMS
+    Abrir Formulario De Login
 
-    Click Text                  LOGIN
-    Wait Until Page Contains    Fala QA, vamos testar o login?
-    Wait Until Page Contains    Fala QA, vamos testar o login?
-
-    Input Text       id=io.qaninja.android.twp:id/etEmail       eu@papito.io
-    Input Text       id=io.qaninja.android.twp:id/etPassword    qaninja
-    Click Element    id=io.qaninja.android.twp:id/btnSubmit
+    Input Text       ${ET_EMAIL}       eu@papito.io
+    Input Text       ${ET_PASSWORD}    qaninja
+    Click Element    ${BTN_SUBMIT}
 
     Wait Until Page Contains    Show! Suas credenciais são validas.
+
+Deve mostrar senha inválida
+    Abrir Formulario De Login
+
+    Input Text       ${ET_EMAIL}       eu@papito.io
+    Input Text       ${ET_PASSWORD}    senhaTeste123
+    Click Element    ${BTN_SUBMIT}
+
+    Wait Until Page Contains    Senha inválida!

@@ -4,7 +4,7 @@ Resource    helpers.robot
 
 *** Keywords ***
 Open Session
-    Set Appium Timeout    5
+    Set Appium Timeout    7
     Open Application      http://localhost:4723/wd/hub
     ...                   automationName=UiAutomator2
     ...                   deviceName=SM_G980F
@@ -14,7 +14,7 @@ Open Session
 
 #Usados especificamente para o teste tela inicial, pois não pode acessar get started
 Open Session2
-    Set Appium Timeout    5
+    Set Appium Timeout    7
     Open Application      http://localhost:4723/wd/hub
     ...                   automationName=UiAutomator2
     ...                   deviceName=SM_G980F
