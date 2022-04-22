@@ -37,3 +37,11 @@ Abrir Formulario De Radion Buttons
 
     Click Text                  BOTÕES DE RADIO
     Wait Until Page Contains    Escolha sua linguagem preferida
+
+Abrir Formulario De CheckBox
+    Open Nav
+    Click Text                  INPUTS
+    Wait Until Page Contains    INPUTS
+
+    Click Text                  CHECKBOX
+    Wait Until Page Contains    Marque as techs que usam Appium
