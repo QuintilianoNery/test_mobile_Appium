@@ -2,14 +2,15 @@
 Documentation    Aqui teremos as Keywords helpers
 
 *** Variables ***
-${START}            COMEÇAR
-${HAMBURGER}        xpath=//android.widget.ImageButton[@content-desc="Open navigation drawer"]
-${NAV_VIEW}         id=io.qaninja.android.twp:id/navView
-${TOOLBAR_TITLE}    id=io.qaninja.android.twp:id/toolbarTitle
-${ET_EMAIL}         id=io.qaninja.android.twp:id/etEmail
-${ET_PASSWORD}      id=io.qaninja.android.twp:id/etPassword
-${BTN_SUBMIT}       id=io.qaninja.android.twp:id/btnSubmit
-${TEXT_CLICK}       CLIQUE SIMPLES
+${START}                 COMEÇAR
+${HAMBURGER}             xpath=//android.widget.ImageButton[@content-desc="Open navigation drawer"]
+${NAV_VIEW}              id=io.qaninja.android.twp:id/navView
+${TOOLBAR_TITLE}         id=io.qaninja.android.twp:id/toolbarTitle
+${ET_EMAIL}              id=io.qaninja.android.twp:id/etEmail
+${ET_PASSWORD}           id=io.qaninja.android.twp:id/etPassword
+${BTN_SUBMIT}            id=io.qaninja.android.twp:id/btnSubmit
+${TEXT_CLICK_SIMPLES}    CLIQUE SIMPLES
+${TEXT_CLICK_LONGO}      CLIQUE LONGO
 
 *** Keywords ***
 Get Started
@@ -51,7 +52,15 @@ Abrir Formulario De CheckBox
 Go To Short Click
     Open Nav
     Click Text                  BOTÕES
-    Wait Until Page Contains    ${TEXT_CLICK}
+    Wait Until Page Contains    ${TEXT_CLICK_SIMPLES}
 
-    Click Text                  ${TEXT_CLICK}
+    Click Text                  ${TEXT_CLICK_SIMPLES}
     Wait Until Page Contains    Botão clique simples
+
+Go To Long Click
+    Open Nav
+    Click Text                  BOTÕES
+    Wait Until Page Contains    ${TEXT_CLICK_SIMPLES}
+
+    Click Text                  ${TEXT_CLICK_LONGO}
+    Wait Until Page Contains    Botão clique longo
