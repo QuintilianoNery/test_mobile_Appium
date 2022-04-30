@@ -9,6 +9,7 @@ ${TOOLBAR_TITLE}    id=io.qaninja.android.twp:id/toolbarTitle
 ${ET_EMAIL}         id=io.qaninja.android.twp:id/etEmail
 ${ET_PASSWORD}      id=io.qaninja.android.twp:id/etPassword
 ${BTN_SUBMIT}       id=io.qaninja.android.twp:id/btnSubmit
+${TEXT_CLICK}       CLIQUE SIMPLES
 
 *** Keywords ***
 Get Started
@@ -45,3 +46,12 @@ Abrir Formulario De CheckBox
 
     Click Text                  CHECKBOX
     Wait Until Page Contains    Marque as techs que usam Appium
+
+
+Go To Short Click
+    Open Nav
+    Click Text                  BOTÕES
+    Wait Until Page Contains    ${TEXT_CLICK}
+
+    Click Text                  ${TEXT_CLICK}
+    Wait Until Page Contains    Botão clique simples
