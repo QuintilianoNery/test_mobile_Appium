@@ -143,13 +143,20 @@ O segundo comando é para a utilização da biblioteca do Robot Framework com o 
 ### Configurar os capabilits 
 - [Appium Documentation > Desired Capabilities](https://appium.io/docs/en/writing-running-appium/caps/)
 
+### Capabilities mais usados
+
 ```
-- Capabilities mais usados
 {
   "automationName": "UiAutomator2",
   "deviceName": "Android",
   "platformName": "Android",
   "app": "CAMINHO DO APP FISICO NO COMPUTADOR",
-  "udid": "emulator-5554"
+  "udid": ""
 }
+```
+
+### Comandos para pegar udid do telefone
+```
+cmd: adb devices
+cmd: adb devices -l
 ```
