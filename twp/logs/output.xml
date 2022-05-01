@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0 (Python 3.10.4 on win32)" generated="20220430 15:55:12.960" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0 (Python 3.10.4 on win32)" generated="20220430 20:33:30.650" rpa="false" schemaversion="3">
 <suite id="s1" name="Tests" source="C:\Users\quint\OneDrive\Documentos\Repositorios\test_mobile_appium\twp\tests">
-<suite id="s1-s1" name="Buttons Click" source="C:\Users\quint\OneDrive\Documentos\Repositorios\test_mobile_appium\twp\tests\buttons_click.robot">
-<test id="s1-s1-t1" name="Deve realizar um clique longo" line="15">
+<suite id="s1-s1" name="Spinner" source="C:\Users\quint\OneDrive\Documentos\Repositorios\test_mobile_appium\twp\tests\spinner.robot">
+<test id="s1-s1-t1" name="Deve selecionar um perfil QA" line="12">
 <kw name="Open Session" library="base" type="SETUP">
 <kw name="Set Appium Timeout" library="AppiumLibrary">
 <arg>7</arg>
 <doc>Sets the timeout in seconds used by various keywords.</doc>
-<status status="PASS" starttime="20220430 15:55:13.292" endtime="20220430 15:55:13.292"/>
+<status status="PASS" starttime="20220430 20:33:31.097" endtime="20220430 20:33:31.097"/>
 </kw>
 <kw name="Open Application" library="AppiumLibrary">
 <arg>http://localhost:4723/wd/hub</arg>
@@ -21,100 +21,174 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 | *Option*            | *Man.* | *Description*     |
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |</doc>
-<status status="PASS" starttime="20220430 15:55:13.292" endtime="20220430 15:55:23.669"/>
+<status status="PASS" starttime="20220430 20:33:31.098" endtime="20220430 20:33:38.720"/>
 </kw>
 <kw name="Get Started" library="helpers">
 <kw name="Wait Until Page Contains" library="AppiumLibrary">
 <arg>${START}</arg>
 <doc>Waits until `text` appears on current page.</doc>
-<status status="PASS" starttime="20220430 15:55:23.671" endtime="20220430 15:55:28.190"/>
+<status status="PASS" starttime="20220430 20:33:38.720" endtime="20220430 20:33:43.295"/>
 </kw>
 <kw name="Click Text" library="AppiumLibrary">
 <arg>${START}</arg>
 <doc>Click text identified by ``text``.</doc>
-<status status="PASS" starttime="20220430 15:55:28.190" endtime="20220430 15:55:28.407"/>
+<status status="PASS" starttime="20220430 20:33:43.296" endtime="20220430 20:33:43.505"/>
 </kw>
-<status status="PASS" starttime="20220430 15:55:23.670" endtime="20220430 15:55:28.407"/>
+<status status="PASS" starttime="20220430 20:33:38.720" endtime="20220430 20:33:43.506"/>
 </kw>
-<status status="PASS" starttime="20220430 15:55:13.291" endtime="20220430 15:55:28.408"/>
+<status status="PASS" starttime="20220430 20:33:31.097" endtime="20220430 20:33:43.506"/>
 </kw>
-<kw name="Go To Long Click" library="helpers">
+<kw name="Go To SingUp Form" library="helpers">
 <kw name="Open Nav" library="helpers">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${HAMBURGER}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" starttime="20220430 15:55:28.409" endtime="20220430 15:55:29.660"/>
+<status status="PASS" starttime="20220430 20:33:43.508" endtime="20220430 20:33:44.661"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${HAMBURGER}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220430 15:55:29.665" level="INFO">Clicking element 'xpath=//android.widget.ImageButton[@content-desc="Open navigation drawer"]'.</msg>
-<status status="PASS" starttime="20220430 15:55:29.661" endtime="20220430 15:55:29.786"/>
+<msg timestamp="20220430 20:33:44.666" level="INFO">Clicking element 'xpath=//android.widget.ImageButton[@content-desc="Open navigation drawer"]'.</msg>
+<status status="PASS" starttime="20220430 20:33:44.661" endtime="20220430 20:33:44.781"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${NAV_VIEW}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" starttime="20220430 15:55:29.786" endtime="20220430 15:55:30.730"/>
+<status status="PASS" starttime="20220430 20:33:44.782" endtime="20220430 20:33:45.840"/>
 </kw>
-<status status="PASS" starttime="20220430 15:55:28.409" endtime="20220430 15:55:30.730"/>
-</kw>
-<kw name="Click Text" library="AppiumLibrary">
-<arg>BOTÕES</arg>
-<doc>Click text identified by ``text``.</doc>
-<status status="PASS" starttime="20220430 15:55:30.731" endtime="20220430 15:55:30.931"/>
-</kw>
-<kw name="Wait Until Page Contains" library="AppiumLibrary">
-<arg>${TEXT_CLICK_SIMPLES}</arg>
-<doc>Waits until `text` appears on current page.</doc>
-<status status="PASS" starttime="20220430 15:55:30.931" endtime="20220430 15:55:31.402"/>
+<status status="PASS" starttime="20220430 20:33:43.508" endtime="20220430 20:33:45.841"/>
 </kw>
 <kw name="Click Text" library="AppiumLibrary">
-<arg>${TEXT_CLICK_LONGO}</arg>
+<arg>FORMS</arg>
 <doc>Click text identified by ``text``.</doc>
-<status status="PASS" starttime="20220430 15:55:31.402" endtime="20220430 15:55:31.994"/>
+<status status="PASS" starttime="20220430 20:33:45.842" endtime="20220430 20:33:46.056"/>
 </kw>
 <kw name="Wait Until Page Contains" library="AppiumLibrary">
-<arg>Botão clique longo</arg>
+<arg>FORMS</arg>
 <doc>Waits until `text` appears on current page.</doc>
-<status status="PASS" starttime="20220430 15:55:31.994" endtime="20220430 15:55:32.734"/>
-</kw>
-<status status="PASS" starttime="20220430 15:55:28.408" endtime="20220430 15:55:32.734"/>
-</kw>
-<kw name="Long Press" library="AppiumLibrary">
-<arg>io.qaninja.android.twp:id/long_click</arg>
-<arg>1000</arg>
-<doc>Long press the element with optional duration</doc>
-<status status="PASS" starttime="20220430 15:55:32.735" endtime="20220430 15:55:35.442"/>
+<status status="PASS" starttime="20220430 20:33:46.056" endtime="20220430 20:33:46.523"/>
 </kw>
 <kw name="Wait Until Page Contains" library="AppiumLibrary">
-<arg>CLIQUE LONGO OK</arg>
+<arg>CADASTRO</arg>
 <doc>Waits until `text` appears on current page.</doc>
-<status status="PASS" starttime="20220430 15:55:35.442" endtime="20220430 15:55:35.494"/>
+<status status="PASS" starttime="20220430 20:33:46.523" endtime="20220430 20:33:47.019"/>
+</kw>
+<kw name="Click Text" library="AppiumLibrary">
+<arg>CADASTRO</arg>
+<doc>Click text identified by ``text``.</doc>
+<status status="PASS" starttime="20220430 20:33:47.019" endtime="20220430 20:33:47.199"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Cadastro</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20220430 20:33:47.200" endtime="20220430 20:33:47.902"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Bem-vindo, crie sua conta.</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20220430 20:33:47.902" endtime="20220430 20:33:47.965"/>
+</kw>
+<status status="PASS" starttime="20220430 20:33:43.507" endtime="20220430 20:33:47.965"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${seletor_elemento}etUsername</arg>
+<arg>Quintiliano</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20220430 20:33:47.968" level="INFO">Typing text 'Quintiliano' into text field 'id=io.qaninja.android.twp:id/etUsername'</msg>
+<status status="PASS" starttime="20220430 20:33:47.966" endtime="20220430 20:33:48.112"/>
+</kw>
+<kw name="Element Should Contain Text" library="AppiumLibrary">
+<arg>${seletor_elemento}etUsername</arg>
+<arg>Quintiliano</arg>
+<doc>Verifies element identified by ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20220430 20:33:48.117" level="INFO">Verifying element 'id=io.qaninja.android.twp:id/etUsername' contains text 'Quintiliano'.</msg>
+<status status="PASS" starttime="20220430 20:33:48.113" endtime="20220430 20:33:48.701"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${seletor_elemento}etEmail</arg>
+<arg>q@q.com.br</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20220430 20:33:48.708" level="INFO">Typing text 'q@q.com.br' into text field 'id=io.qaninja.android.twp:id/etEmail'</msg>
+<status status="PASS" starttime="20220430 20:33:48.702" endtime="20220430 20:33:48.827"/>
+</kw>
+<kw name="Element Should Contain Text" library="AppiumLibrary">
+<arg>${seletor_elemento}etEmail</arg>
+<arg>q@q.com.br</arg>
+<doc>Verifies element identified by ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20220430 20:33:48.833" level="INFO">Verifying element 'id=io.qaninja.android.twp:id/etEmail' contains text 'q@q.com.br'.</msg>
+<status status="PASS" starttime="20220430 20:33:48.828" endtime="20220430 20:33:49.410"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${seletor_elemento}etPassword</arg>
+<arg>Q123456*</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20220430 20:33:49.416" level="INFO">Typing text 'Q123456*' into text field 'id=io.qaninja.android.twp:id/etPassword'</msg>
+<status status="PASS" starttime="20220430 20:33:49.411" endtime="20220430 20:33:50.030"/>
+</kw>
+<kw name="Element Should Contain Text" library="AppiumLibrary">
+<arg>${seletor_elemento}etPassword</arg>
+<arg>Q123456*</arg>
+<doc>Verifies element identified by ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20220430 20:33:50.034" level="INFO">Verifying element 'id=io.qaninja.android.twp:id/etPassword' contains text 'Q123456*'.</msg>
+<status status="PASS" starttime="20220430 20:33:50.031" endtime="20220430 20:33:50.619"/>
+</kw>
+<kw name="Element Should Contain Text" library="AppiumLibrary">
+<arg>android:id/text1</arg>
+<arg>Escolha seu perfil</arg>
+<doc>Verifies element identified by ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20220430 20:33:50.627" level="INFO">Verifying element 'android:id/text1' contains text 'Escolha seu perfil'.</msg>
+<status status="PASS" starttime="20220430 20:33:50.621" endtime="20220430 20:33:50.729"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${seletor_elemento}spinnerJob</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220430 20:33:50.732" level="INFO">Clicking element 'id=io.qaninja.android.twp:id/spinnerJob'.</msg>
+<status status="PASS" starttime="20220430 20:33:50.729" endtime="20220430 20:33:50.848"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${ListView}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20220430 20:33:50.849" endtime="20220430 20:33:51.755"/>
+</kw>
+<kw name="Click Text" library="AppiumLibrary">
+<arg>QA</arg>
+<doc>Click text identified by ``text``.</doc>
+<status status="PASS" starttime="20220430 20:33:51.755" endtime="20220430 20:33:52.507"/>
+</kw>
+<kw name="Click Text" library="AppiumLibrary">
+<arg>CADASTRAR</arg>
+<doc>Click text identified by ``text``.</doc>
+<status status="PASS" starttime="20220430 20:33:52.507" endtime="20220430 20:33:52.671"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Tudo certo, recebemos seus dados!</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20220430 20:33:52.672" endtime="20220430 20:33:52.765"/>
 </kw>
 <kw name="Close Session" library="base" type="TEARDOWN">
 <kw name="Close Application" library="AppiumLibrary">
 <doc>Closes the current application and also close webdriver session.</doc>
-<status status="PASS" starttime="20220430 15:55:35.496" endtime="20220430 15:55:35.955"/>
+<status status="PASS" starttime="20220430 20:33:52.767" endtime="20220430 20:33:53.099"/>
 </kw>
-<status status="PASS" starttime="20220430 15:55:35.495" endtime="20220430 15:55:35.956"/>
+<status status="PASS" starttime="20220430 20:33:52.766" endtime="20220430 20:33:53.099"/>
 </kw>
-<tag>longo</tag>
-<status status="PASS" starttime="20220430 15:55:13.291" endtime="20220430 15:55:35.957"/>
+<tag>qa</tag>
+<status status="PASS" starttime="20220430 20:33:31.095" endtime="20220430 20:33:53.099"/>
 </test>
-<status status="PASS" starttime="20220430 15:55:12.994" endtime="20220430 15:55:35.959"/>
+<status status="PASS" starttime="20220430 20:33:30.695" endtime="20220430 20:33:53.100"/>
 </suite>
-<status status="PASS" starttime="20220430 15:55:12.963" endtime="20220430 15:55:35.961"/>
+<status status="PASS" starttime="20220430 20:33:30.652" endtime="20220430 20:33:53.102"/>
 </suite>
 <statistics>
 <total>
 <stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0" skip="0">longo</stat>
+<stat pass="1" fail="0" skip="0">qa</stat>
 </tag>
 <suite>
 <stat pass="1" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1" name="Buttons Click">Tests.Buttons Click</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Spinner">Tests.Spinner</stat>
 </suite>
 </statistics>
 <errors>

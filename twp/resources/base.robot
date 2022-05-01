@@ -10,7 +10,7 @@ Open Session
     ...                   deviceName=SM_G980F
     ...                   platformName=Android
     ...                   app=${EXECDIR}/App/twp.apk
-    Get Started 
+    Get Started
 
 #Usados especificamente para o teste tela inicial, pois não pode acessar get started
 Open Session2
@@ -22,4 +22,5 @@ Open Session2
     ...                   app=${EXECDIR}/App/twp.apk
 
 Close Session
+    Capture Page Screenshot
     Close Application
