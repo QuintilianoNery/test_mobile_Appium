@@ -143,8 +143,7 @@ O segundo comando é para a utilização da biblioteca do Robot Framework com o 
 ### Configurar os capabilits 
 - [Appium Documentation > Desired Capabilities](https://appium.io/docs/en/writing-running-appium/caps/)
 
-### Capabilities mais usados
-
+### Capabilities para abrir um  app local PC
 ```
 {
   "automationName": "UiAutomator2",
@@ -152,6 +151,20 @@ O segundo comando é para a utilização da biblioteca do Robot Framework com o 
   "platformName": "Android",
   "app": "CAMINHO DO APP FISICO NO COMPUTADOR",
   "udid": ""
+}
+```
+
+### Capabilities para abrir um app instalado no telefone
+Ex.: Abrir o whatsapp
+```
+{
+  "automationName": "UiAutomator2",
+  "deviceName": "Android",
+  "platformName": "Android",
+  "appPackage": "com.whatsapp.Main",
+  "appActivity": "com.whatsapp",
+  "udid": "",
+  "noReset": true
 }
 ```
 
